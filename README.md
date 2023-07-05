@@ -7,3 +7,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus mollis 
 Sed volutpat ligula arcu, sit amet viverra lacus dignissim eget. Integer gravida felis interdum ipsum venenatis, sit amet semper diam malesuada. Pellentesque vitae leo erat. Curabitur in orci sed nunc aliquet consequat. Sed faucibus, neque et maximus pellentesque, orci neque ullamcorper eros, cursus placerat ante erat in nisl. Donec egestas at ante vitae auctor. Integer dapibus nisi vitae massa vestibulum tristique. Nulla eu semper purus. 
 
 #### Сгенерировано 5 абзацей, 450 слов, 2973 байтов Lorem Ipsum
+
+# Fibonacci
+
+```ts
+function fib(n: number): number {
+   if (n < 1) {
+      return 1;
+   }
+   let a = 1,
+      b = 1;
+   for (let i = 1; i < n; i++) {
+      [a, b] = [b, a + b];
+   }
+   return b;
+}
+```
